@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title></title>
+</head>
+<script>
+// 1. Crear una página HTML con un script que calcule el factorial de un numero dado por el usuario.
+var factorial;
+
+factorial = function(x) {
+  if (x > 1) {
+    return x * factorial(x - 1);
+  } else {
+    return 1;
+  }
+};
+alert(factorial(prompt("Factorial de?")));
+</script>
+<body>
+
+</body>
+</html>

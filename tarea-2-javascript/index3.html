@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title></title>
+</head>
+<script>
+// 3. Hacer una página HTML con un script que genere un numero aleatorio entre 1 y 100 y permitir que el usuario lo adivine. informándole si su intento quedó arriba o abajo del número buscando hasta que lo encuentre. Informando el número de intentos realizados.
+
+var a, random;
+
+random = Math.floor(Math.random() * 100);
+
+alert(random);
+
+while (true) {
+  a = +prompt("Dame un numero");
+  if (a > random) {
+    alert('Pa abajo');
+  } else if (a < random) {
+    alert('Pa arriba');
+  } else {
+    alert("Le diste: " + random);
+    break;
+  }
+}
+
+
+</script>
+<body>
+
+</body>
+</html>
