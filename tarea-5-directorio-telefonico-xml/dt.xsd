@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="person">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xsd:string" />
+				<xs:element name="telephone" type="xsd:string" />
+				<xs:element name="email" type="xsd:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xsd:element name="dt" >
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element ref="person" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+</xs:schema>
